@@ -33,7 +33,7 @@ My next idea was to use the balanced dataset provided on Kaggle. This made such 
 
 ![Confusion Matrix](model2_confusion_matrix.png)
 
-## Tableau
+### Tableau
 (see interactive Tableau dashboard [here](https://public.tableau.com/app/profile/lorien.mccomb/viz/DiabetesStatsandRiskFactors/Dashboard1?publish=yes))
 
 To examine which features in the dataset have the most value in predicting the presence of diabetes or prediabetes, I made several charts in Tableau. The pie charts and bar charts show the percentage of people who have diabetes given the presence/absence of a feature in the BRFSS dataset. For this dashboard, I learned how to make a dynamic dimension chart where the user can select a feature from the dataset and see how diabetes affects those with and without the chosen risk factor.
