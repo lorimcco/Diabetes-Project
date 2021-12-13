@@ -9,16 +9,17 @@ The aim of this project is to create a model that predicts the presence of diabe
 - [Dataset](https://www.kaggle.com/alexteboul/diabetes-health-indicators-dataset) from Kaggle
 - [BRFSS 2015 Codebook](https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf)
 - [Canadian Diabetes Statisics](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310009607) from Statistics Canada
-- Further information about diabetes: [Diabetes Canada](https://www.diabetes.ca/) and [CDC](https://www.cdc.gov/diabetes/basics/diabetes.html)
+- Further information about diabetes: [Diabetes Canada](https://www.diabetes.ca/about-diabetes/what-is-diabetes) and [CDC](https://www.cdc.gov/diabetes/basics/diabetes.html)
 - [BMI Information](https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html)
 
-#### Questions:
+### Questions:
 - Can we make a model to predict whether a person has diabetes based on the risk factors included in the dataset?
 - Which factors are most predictive in determining whether a person has diabetes?
 
 ## Process & Challenges
 
-**Python** (see Jupyter Notebook [here])
+### Python
+(see Jupyter Notebook [here](https://github.com/lorimcco/Diabetes-Project/blob/main/DiabetesProject.ipynb))
 
 I began by loading the data into a Jupyter Notebook and taking a look at it. The dataset was exceptionally clean with no missing values. I looked at some summary statistics. The most notable discovery was that the dataset was unbalanced, with only 14% of the people surveyed having diabetes or prediabetes.
 
@@ -32,7 +33,8 @@ My next idea was to use the balanced dataset provided on Kaggle. This made such 
 
 ![Confusion Matrix](model2_confusion_matrix.png)
 
-**Tableau** (see interactive Tableau dashboard [here](https://public.tableau.com/app/profile/lorien.mccomb/viz/DiabetesStatsandRiskFactors/Dashboard1?publish=yes))
+## Tableau
+(see interactive Tableau dashboard [here](https://public.tableau.com/app/profile/lorien.mccomb/viz/DiabetesStatsandRiskFactors/Dashboard1?publish=yes))
 
 To examine which features in the dataset have the most value in predicting the presence of diabetes or prediabetes, I made several charts in Tableau. The pie charts and bar charts show the percentage of people who have diabetes given the presence/absence of a feature in the BRFSS dataset. For this dashboard, I learned how to make a dynamic dimension chart where the user can select a feature from the dataset and see how diabetes affects those with and without the chosen risk factor.
 
