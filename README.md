@@ -1,5 +1,7 @@
 # Diabetes Classification Project
 
+![Diabetes Image](diabetes-image.jpg)
+
 ## Introduction
 
 The aim of this project is to create a model that predicts the presence of diabetes or prediabetes based on the answers to 21 health survey questions. The data comes from the 2015 Behavioral Risk Factor Surveillance System, a health-related telephone survey conducted annually in the United States by the CDC. The full survey contains responses to 330 questions from over 400,000 people. This dataset is a cleaned subset of the full BRFSS survey, containing the responses to questions identified as potential risk factors for diabetes.
@@ -45,7 +47,7 @@ I rounded out the dashboard with an interactive map of Canadian diabetes statist
 ## Solutions & Analysis
 
 ### Can we make a model to predict whether a person had diabetes based on the risk factors included in the dataset?
-The Random Forest Classifier with the balanced dataset predicts whether or not a person has diabetes or prediabetes with 74% accuracy. It correctly predicts the presence of diabetes in those who have the disease 77% of the time. Considering that this data comes from a telephone survey, not direct medical tests, I find these results quite impressive! It is not a substitute for a medical diagnosis, but if a person found themselves classified as having diabetes/prediabetes with this model, I would recommend seeing a doctor for diabetes testing.
+The Random Forest Classifier with the balanced dataset predicts whether or not a person has diabetes or prediabetes with 74% accuracy. It correctly predicts the presence of diabetes in those who have the disease 77% of the time. Considering that this data comes from a telephone survey, not direct medical tests, I find these results quite impressive! Importantly, this model is *not* a substitute for a medical diagnosis. However, if a person was classified as having diabetes/prediabetes with this model, I would recommend seeing a doctor for testing.
 
 ### Which factors are most predictive in determining whether a person has diabetes?
 Some indicators that appear to correlate most strongly with diabetes are:
@@ -64,3 +66,6 @@ I also learned that Atlantic provinces (especially Newfoundland and Labrador) ex
 - I learned how to use GridSearch to tune hyperparameters.
 - I learned how to create two new types of charts in Tableau: a unit chart and a chart with a dynamic dimension dropdown menu.
 - I also challenged myself to create a more visually striking Tableau dashboard than I ever have before.
+
+### Video
+Watch me present this project [here]https://www.loom.com/share/00fd86a356d74f7c8b5ae637f50a36db).
