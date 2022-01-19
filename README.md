@@ -29,9 +29,9 @@ To answer my first question, I chose a Random Forest Classifier from Scikit-Lear
 
 ![Confusion Matrix](model1_confusion_matrix.png)
 
-I attempted to fix this by hypertuning the class_weight hyperparameter. I used GridSearch to test 200 different weight combinations, but found that there was no optimal weight to improve the model’s ability to detect true diabetes cases: the F1 score continually decreased as the weight for class 1 increased.
+I attempted to fix this by tuning the class_weight hyperparameter. I used GridSearch to test 200 different weight combinations, but found that there was no optimal weight to improve the model’s ability to detect true diabetes cases: the F1 score continually decreased as the weight for class 1 increased.
 
-My next idea was to use the balanced dataset provided on Kaggle. This made such a big difference! After hypertuning n_estimators, the model correctly predicted 77% of those with diabetes as class 1. The model’s overall accuracy dropped to 74%, but I decided in this context it was more important to correctly classify those with diabetes than to have a higher overall accuracy.
+My next idea was to use the balanced dataset provided on Kaggle. This made such a big difference! After tuning n_estimators, the model correctly predicted 77% of those with diabetes as class 1. The model’s overall accuracy dropped to 74%, but I decided in this context it was more important to correctly classify those with diabetes than to have a higher overall accuracy.
 
 ![Confusion Matrix](model2_confusion_matrix.png)
 
